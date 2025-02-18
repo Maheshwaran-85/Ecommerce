@@ -1,0 +1,153 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left .logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-center input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-center input:focus {
+  width: 350px;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-button:hover {
+  color: #ffcc00;
+}
+
+/* Mobile Menu Button */
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Dropdown Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #2a5298;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border-radius: 8px;
+}
+
+.mobile-menu button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mobile-menu button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Product Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid-item {
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar Adjustments */
+  .navbar-center input {
+    width: 180px;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  /* Grid Adjustments */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
