@@ -1,4 +1,4 @@
-/* Navbar Styling */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,6 @@
   color: #ffcc00;
 }
 
-/* Mobile Menu Button */
 .menu-button {
   display: none;
   background: transparent;
@@ -127,9 +126,9 @@
   margin-top: 10px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
-  /* Navbar Adjustments */
+
   .navbar-center input {
     width: 180px;
   }
@@ -146,7 +145,6 @@
     display: flex;
   }
 
-  /* Grid Adjustments */
   .grid-container {
     grid-template-columns: 1fr;
   }

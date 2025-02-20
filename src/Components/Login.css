@@ -1,6 +1,6 @@
-/* login.css */
 
-/* Background styling for the entire page */
+
+
 .login-div {
   background: linear-gradient(45deg, #9b4efc, #73a6fc);
   min-height: 100vh;
@@ -11,7 +11,7 @@
   padding: 20px;
 }
 
-/* Card container styling */
+
 .signup-container {
   max-width: 380px;
   width: 100%;
@@ -23,7 +23,7 @@
   height: auto;
 }
 
-/* Title styling */
+
 .signup-title {
   font-size: 1.8rem;
   color: #4b8efc;
@@ -32,7 +32,6 @@
   letter-spacing: 1px;
 }
 
-/* Input field styling */
 input {
   width: 100%;
   padding: 10px 15px;
@@ -43,14 +42,14 @@ input {
   transition: all 0.3s ease-in-out;
 }
 
-/* Focus effect on input fields */
+
 input:focus {
   border-color: #73a6fc;
   box-shadow: 0 0 5px rgba(115, 166, 252, 0.5);
   outline: none;
 }
 
-/* Button styling */
+
 button {
   width: 100%;
   padding: 12px 20px;

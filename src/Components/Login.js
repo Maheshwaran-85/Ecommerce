@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css'; // Import the CSS file for custom styles
+import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import * as yup from "yup"
 import { ErrorMessage, Formik } from 'formik'
